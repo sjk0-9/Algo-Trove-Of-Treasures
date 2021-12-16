@@ -480,12 +480,12 @@ update_asset(my_cool_automated_nft['index'], note=arc69_metadata)
 
 If you've been able to follow along with this guide, you should have everything you need to start programatically creating and publishing your own NFTs.
 
+Ideas on how you could build off of this:
+
+* Read [line by line through a CSV](https://docs.python.org/3/library/csv.html#csv.DictReader) and batch create/update assets.
+* Use a tool such as [nft-generator-py](https://github.com/Jon-Becker/nft-generator-py) or [HashLips](https://github.com/HashLips/hashlips_art_engine) to generate NFTs to then batch publish.
+
 I'd love to see what you've created with this.
 Feel free to get in touch, my twitter is [sjk0_9](https://twitter.com/sjk0_9).
 
 If you've got any feedback or improvements, please let me know!
-
-
-```python
-
-```
