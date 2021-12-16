@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-mkdir .build-temp
+mkdir .export-temp
 
 jupyter nbconvert --to markdown ./src/*.ipynb 
-cp ./src/*.md .build-temp
+cp ./src/*.md .export-temp
 rm ./src/*.md
 
-cp ./md/*.md .build-temp
+cp ./md/*.md .export-temp
 
-rm -rf build
-mv .build-temp build
+rm -rf export
+mv .export-temp export
