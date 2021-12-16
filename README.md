@@ -42,7 +42,8 @@ Everything written in here assumes you're set up like follows:
 
 Once your set up, feel free to pick whatever you fancy.
 
-* [Creating ASAs and NFTs (including ARC-69)](./export/creating_asas.md)
+* [Creating ASAs and NFTs](./export/creating_asas.md) - including ARC-69
+* [Sending ASAs](./export/sending_assets.md) - including opting in, and sending assets in batches
 
 ## Other Algorand Things by SJK
 
