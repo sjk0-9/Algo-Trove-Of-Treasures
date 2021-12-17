@@ -44,7 +44,7 @@ FRWQZO4A6NZKANEYYWAHZIBHJ46T2LVRFACCLHUY3JQAJLUIWNQQLOQ26A
 ```
 
 Details for how they generated the address, and more about the burn can be found [here](https://algorandfoundation.cdn.prismic.io/algorandfoundation/5c80fdd2-fe08-4bda-8ac5-981b37908031_Early+Redemption+Confirmation.pdf).
-The important thing, is that because of the way the address was randomly generated, there is no corresponding private key. Rekeying to this address of these will hopefully satisfy an observer that you don't have access to the account anymore.
+The important thing, is that because of the way the address was randomly generated, there is no corresponding private key. Rekeying to this address will hopefully satisfy an observer that you don't have access to the account anymore.
 
 (I also tried testing with the zero address, but that didn't seem to work properly).
 
@@ -67,6 +67,9 @@ There's a few caveates to this process.
 > There is no way you can get it back.
 > Just forget about it.
 > Don't come asking for a way to reverse the process.
+>
+> Don't blindly trust the burn address I've given you.
+> Verify it with official sources and recalculate if need be.
 >
 > The code and instructions in this demonstration is released under the MIT license and as such has no warantee or guarantees that it is fit for purpose.
 > I am in no way responsible for anything you do to your assets or wallets just because you read it here.
@@ -142,7 +145,7 @@ def burn_assets(assets):
         sender=sender_address,
         sp=params,
         receiver=burn_address,
-        # 10100 microalgo corresponds to 0.101 algo
+        # 100000 microalgo corresponds to 0.1 algo
         amt=100000 + 101000 * num_assets, 
     )
     
