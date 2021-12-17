@@ -180,7 +180,7 @@ def burn_assets(assets):
     
     # Wrap all of the transactions in a group, so that they all succeed or fail
     # as "atomic transfers". If one fails, eveything is rolled back and you don't
-    # loose your algo and the burn wallet isn't created.
+    # lose your algo and the burn wallet isn't created.
     # See https://developer.algorand.org/docs/get-details/atomic_transfers/ for
     # more details.
     group_id = calculate_group_id([algo_transfer_txn, *opt_in_transactions, *transfer_transactions])

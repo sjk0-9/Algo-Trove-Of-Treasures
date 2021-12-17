@@ -15,7 +15,7 @@ I take no responsibility for anything you publish to the blockchain and/or run.
 ## About me
 
 By day I'm a web app developer, based in Australia.
-However, I'm really excited about Web3S and so in my spare time have taken it upon myself to try and learn about it.
+However, I'm really excited about Web3 and so in my spare time have taken it upon myself to try and learn about it.
 As part of it, I've taken over lead development of the [NFT Grocery Store Game](https://www.algochainnft.com/grocery), and I'm now beginning to work on my own bot, and alogrand utility service.
 
 ## About these docs
