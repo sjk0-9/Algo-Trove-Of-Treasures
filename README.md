@@ -44,6 +44,7 @@ Once your set up, feel free to pick whatever you fancy.
 
 * [Creating ASAs and NFTs](./export/creating_asas.md) - including ARC-69
 * [Sending ASAs](./export/sending_assets.md) - including opting in, and sending assets in batches
+* [Experiment: Burning ASAs](./export/burning_asas.md)
 
 ## Other Algorand Things by SJK
 

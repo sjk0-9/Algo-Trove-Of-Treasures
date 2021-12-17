@@ -91,14 +91,14 @@ def create_asset(total, decimals, **kwargs):
 
 
 ```python
-create_txid = create_asset(10000000, 2, asset_name="My Cool ASA", freeze="", clawback="")
+create_txid = create_asset(10000000, 2, asset_name="My Cool ASA", unit_name="COOL", freeze="", clawback="")
 create_txid
 ```
 
 
 
 
-    'N7NT4HANGQ5O5OZRNIQ5KWQAROTCXV2GSS5M2KIYRRJBU6REZTEA'
+    '4M532Z37JHBMSKVYT3YHOK6KCJMAIQL5VHD6TIIN5LM3YSMKVGQA'
 
 
 
@@ -129,7 +129,7 @@ find_asset_from_create_tx(create_txid)
 
 
 
-    {'index': 52057232,
+    {'index': 52262725,
      'params': {'creator': 'DEMOAOT4WHSF7RHA7ICKIHJGXPSVGH5AFMTRJFSUTVBEYZ6Y2EV2K3XCVQ',
       'decimals': 2,
       'default-frozen': False,
@@ -137,7 +137,9 @@ find_asset_from_create_tx(create_txid)
       'name': 'My Cool ASA',
       'name-b64': 'TXkgQ29vbCBBU0E=',
       'reserve': 'DEMOAOT4WHSF7RHA7ICKIHJGXPSVGH5AFMTRJFSUTVBEYZ6Y2EV2K3XCVQ',
-      'total': 10000000}}
+      'total': 10000000,
+      'unit-name': 'COOL',
+      'unit-name-b64': 'Q09PTA=='}}
 
 
 
@@ -184,7 +186,7 @@ my_cool_nft
 
 
 
-    {'index': 52057243,
+    {'index': 52262743,
      'params': {'creator': 'DEMOAOT4WHSF7RHA7ICKIHJGXPSVGH5AFMTRJFSUTVBEYZ6Y2EV2K3XCVQ',
       'decimals': 0,
       'default-frozen': False,
@@ -284,7 +286,7 @@ my_cool_automated_nft
 
 
 
-    {'index': 52057274,
+    {'index': 52262756,
      'params': {'creator': 'DEMOAOT4WHSF7RHA7ICKIHJGXPSVGH5AFMTRJFSUTVBEYZ6Y2EV2K3XCVQ',
       'decimals': 0,
       'default-frozen': False,
@@ -365,13 +367,6 @@ def update_asset(assetId, **kwargs):
 update_asset(my_cool_automated_nft['index'], note='Hello World!')
 ```
 
-
-
-
-    'F7LCSASDXEFKYWJSEPS2SAV3ERLGBHWFUS7AKIMBGNNMZR6VJY6A'
-
-
-
 If you take a look at that in algoexplorer, you'll see the transaction with the note attached.
 Let's make the note actually fulfill the ARC69 requirements though
 
@@ -447,7 +442,7 @@ my_cool_arc69_nft
 
 
 
-    {'index': 52057325,
+    {'index': 52262780,
      'params': {'creator': 'DEMOAOT4WHSF7RHA7ICKIHJGXPSVGH5AFMTRJFSUTVBEYZ6Y2EV2K3XCVQ',
       'decimals': 0,
       'default-frozen': False,
@@ -472,7 +467,7 @@ update_asset(my_cool_automated_nft['index'], note=arc69_metadata)
 
 
 
-    'PZYNNUM5ZIMXGOULLDN3YHVAQW7YZLNXPJOSHOPK2FBYAW2TJ4UQ'
+    'CJIWIOK2D5X7PRO7SZYM245ZTTZ2SUV5XTCG3GETODU3TMQM45OA'
 
 
 
